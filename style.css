@@ -1,0 +1,51 @@
+.calc {
+    margin-top: 20px;
+    border: 6px solid #aeaeae;
+    padding: 20px 40px;
+}
+body {
+	background: grey;
+
+}
+input {
+	width: 40px;
+}
+.row {
+	position: relative;
+}
+.function1 {
+	align: right;
+}
+#result_multi {
+    font-size: 20px;
+    font-weight: 900;
+}
+.element {
+	background-image: url(occ.jpg);
+	width: 600px;
+	border: 1px dashed #ddd;
+	height: 578px;
+	margin: 0 auto;
+}
+#maket {
+    width: 100%; /* Ширина всей таблицы */
+   }
+   TD {
+    vertical-align: top; /* Вертикальное выравнивание в ячейках */
+    padding: 20px; /* Поля вокруг ячеек */
+   }
+   TD#leftcol {
+    width: 200px; /* Ширина левой колонки */
+    background: #ccc; /* Цвет фона левой колонки */
+    border: 2px solid #000; /* Параметры рамки */
+   }
+   TD#rightcol {
+   	font-size: 1em;
+   	line-height: 1.5em;
+    background: #fc3; /* Цвет фона правой колонки */
+    border: 2px solid #000;
+    /* Параметры рамки */
+   }
+   #spacer {
+    width: 200px; /* Расстояние между колонками */
+   }

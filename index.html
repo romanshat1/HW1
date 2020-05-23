@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+<div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+
+    			<div class="calc">
+					
+                        <div class="form-group">
+    					   <h3>Завдання 1<hr>
+    					   Если A- четное - посчитать а * б <hr>иначе а + б</h3>
+                          <label for="a">Введите число <strong>A</strong>:</label> 
+	                       <input type="text" class="form-control" id="a" value="1">	 
+                           <label for="b">Введите число <strong>B</strong>:</label> 
+	                       <input type="text" class="form-control" id="b" value="1">
+	                      
+	                       <div id="result"></div>
+						</div>
+						<button onclick="sum()">Ответ</button>
+                           
+					
+					<hr>
+					Рeзультат: <span id="result_multi"></span>
+    					
+    				
+			    </div>
+    		</div>
+    	</div>
+    
+</div>
+<hr>
+<hr>
+<div class="container">
+        <div class="row">
+        	 <div class="col-sm-4">
+        	 	<div class="calc">
+<h3> Завдання 2</h3>
+<p><strong>Положение:</strong> <span id="coord-live"></span></p>
+<div class="element"></div>
+<hr>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+
+    			<div class="calc">
+					
+                        <div class="form-group">
+                        	
+<h3> Завдання 3</h3>
+<h3> Найти суммы только положительных из трех чисел</h3>
+<p style="color: white;"> <code>function positiveNumbers(a, b, c)<br>
+    {<br>
+        let result = 0;<br>
+        if (a > 0)<br>
+        {<br>
+            result += a;<br>
+        }<br>
+        if (b > 0)<br>
+        {<br>
+            result += b;<br>
+        }<br>
+        if (c > 0)<br>
+        {<br>
+            result += c;<br>
+        }<br>
+        return result;<br>
+    }<br>
+positiveNumbers(2, -2, 4)</code></p>
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+
+    			<div class="calc">
+					
+                        <div class="form-group">
+                        	
+<h3> Завдання 4</h3>
+<h3> Посчитать выражение макс(а*б*с, а+б+с)+3</h3>
+<table cellspacing="0" id="maket">
+   <tr> 
+    <td id="leftcol"><p>функция (перевірена робоча, значення потрібно міняти вручну):</p>
+<code> function getRandomInt(a,b,c)<br>
+	    {<br>
+        let result;<br>
+        let x = a * b * c;<br>
+        let y = a + b + c;<br>
+        if (x > y)<br>
+        {<br>
+            result = x;<br>
+        }<br>
+        else result = y;<br>
+        return result + 3;<br>
+    }<br>
+    getRandomInt(10, 20,30);
+   </code>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+
+    			<div class="calc">
+					
+                        <div class="form-group">
+<h3> Завдання 5</h3>
+<table cellspacing="0" id="maket">
+   <tr> 
+    <td id="leftcol"><p>оцінка 0-19</p>
+<input type="radio" name="nameRadio" checked name="ps4" value="F" checked="checked"/>
+<p>оцінка 20-39</p>
+<input type="radio" name="nameRadio" value="E"/>
+<p>оцінка 40-59</p>
+<input type="radio" name="nameRadio" value="D"/>
+<p>оцінка 60-74</p>
+<input type="radio" name="nameRadio" value="C"/>
+<p>оцінка 75-89</p>
+<input type="radio" name="nameRadio" value="B"/>
+<p>оцінка 90-110</p>
+<input type="radio" name="nameRadio" value="A"/>
+<hr>
+<output id="rezultatRadio">Оцінка</output>
+<hr></td>
+    <td id="spacer"></td>
+    <td id="rightcol"><p><code>function evaluation(num) {<br>    					
+
+	let answer;<br>							
+
+	if (a > =  0  && a <=  19)<br> 
+	{<br> 					
+		answer = 'F';<br>
+	}								
+	} else if (a >= 20 && a <= 39)<br>
+	{<br> 					
+		answer = 'E';<br>
+
+	} else if (a >= 40 && a <= 59)<br>
+	{<br> 
+		answer = 'D';<br>
+
+	} else if (a >= 60 && a <= 74)<br>
+	{<br> 
+		answer = 'C';<br>
+
+	} else if (a >= 75 && a <= 89)<br>
+	{<br> 
+		answer = 'B';<br>
+
+	} else  (a >= 90 && a <= 100)<br>
+	{<br> 
+		answer = 'A';<br>
+}
+	return answer;<br>
+evaluation(num)<br></code></p></td>
+   </tr>
+</div>
+</div>
+</div>
+</div>
+
+    
+
+
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="app.js"></script>
+</body>
+</html>
